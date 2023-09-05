@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80vh;
+        }
+
+        .card {
+            background-image: linear-gradient(to right, rgb(130, 3, 221) 10%, rgb(40, 188, 238) 90%);
+            color: white;
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .head1 {
+            display: flex;
+            flex-direction: row;
+        }
+        .stick{
+            width: 15px;
+            height: 35px;
+            background-color: white;
+            position: relative;
+            transform: rotate(45deg);
+        }
+        .one {
+            width: 15px;
+            height: 60px;
+            background-color: white;
+        }
+
+        .zero {
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .zero div{
+            opacity: 1;
+            width: 30px;
+            height: 30px;
+            background-color:rgb(37, 83, 209) ;
+            position: relative;
+            left: 15px;
+            top: 15px;
+            border-radius: 50%;
+        }
+        .head2 {
+            font-size: 50px;
+            font-weight: 900;
+            margin-left: 15px;
+        }
+
+        .head3 {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 0px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div>
+            <div class="head1">
+                <div class="stick"></div>
+                <div class="one"></div>
+                <div class="zero">
+                    <div></div>
+                </div>
+                <div class="zero">
+                    <div></div>
+                </div>
+            </div>
+            <p class="head2">DAYS</p>
+            <p class="head3">CSS CHALLENGE</p>
+        </div>
+    </div>
+</body>
+
+</html>
